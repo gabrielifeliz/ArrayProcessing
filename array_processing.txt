@@ -1,0 +1,85 @@
+Create an algorithm to:
+1. Find the sum of the elements of an array
+2. Find the mean (average) of the elements of an array.
+----------------------------------------------------------------
+
+1. -----------------------------------------------------------------
+INPUTS
+array(index)
+
+PROCESSING STEPS/ALGORITHM
+Add all elements of the array to sum_of_array_elements in FOR loop
+
+OUTPUTS
+sum_of_array_elements
+
+
+PSEUDOCODE
+Sum_of_the_elements_of_an_array
+	Initialize sum_of_array_elements to zero
+	FOR index = 1 to number_of_elements
+		Add array(index) to sum_of_array_elements
+	ENDFOR
+	Print sum_of_array_elements
+END
+
+CHECKS
+array(0) = 3, array(1) = 4, array(2) = 7
+sum_of_array_elements should be 14
+	sum_of_array_elements = 0 + 3
+	sum_of_array_elements = 3 + 4
+	sum_of_array_elements = 7 + 7 = 14
+	
+array(0) = 4.5, array(1) = 8.6, array(2) = 1.4, array(3) = 5.9
+sum_of_array_elements should be 20.4
+	sum_of_array_elements = 0 + 4.5
+	sum_of_array_elements = 4.5 + 8.6
+	sum_of_array_elements = 13.1 + 1.4
+	sum_of_array_elements = 14.5 + 5.9 = 20.4
+--------------------------------------------------------------------
+
+2. -----------------------------------------------------------------
+INPUTS
+array(index)
+
+PROCESSING STEPS/ALGORITHM
+Add all elements of the array to sum_of_array_elements in FOR loop
+Divide sum_of_array_elements by number_of_elements 
+ to get average_of_array_elements
+
+OUTPUTS
+average_of_array_elements
+
+ 
+PSEUDOCODE
+Average_of_the_elements_of_an_array
+	Initialize sum_of_array_elements to zero
+	Initialize average_of_array_elements to zero
+	FOR index = 1 to number_of_elements
+		Add array(index) to sum_of_array_elements
+	ENDFOR
+	Calculate average_of_array_elements = 
+	 sum_of_array_elements / number_of_elements
+	Print average_of_array_elements
+END
+
+
+CHECKS
+array(0) = 3, array(1) = 4, array(2) = 7
+average_of_array_elements should be 4.67
+	sum_of_array_elements = 0 + 3
+	sum_of_array_elements = 3 + 4
+	sum_of_array_elements = 7 + 7 = 14
+	number_of_elements = 3
+	average_of_array_elements = 14 / 3 = 4.67
+	
+	
+array(0) = 4.5, array(1) = 8.6, array(2) = 1.4, array(3) = 5.9
+average_of_array_elements should be 5.1
+	sum_of_array_elements = 0 + 4.5
+	sum_of_array_elements = 4.5 + 8.6
+	sum_of_array_elements = 13.1 + 1.4
+	sum_of_array_elements = 14.5 + 5.9 = 20.4
+	number_of_elements = 4
+	average_of_array_elements = 20.4 / 4 = 5.1
+--------------------------------------------------------------------
